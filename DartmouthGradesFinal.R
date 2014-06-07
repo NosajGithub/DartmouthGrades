@@ -317,7 +317,7 @@ print(chart7, "chart", file = "./7.txt")
 ## Chart 8
 
 myStateSettings8 <- '\n{"uniColorForNonSelected":false,"orderedByX":false,"orderedByY":false,"time":"2013","playDuration":6855.555555555555,"nonSelectedAlpha":0.1,"xZoomedIn":false,"xZoomedDataMin":46,"colorOption":"4","yZoomedIn":false,"yZoomedDataMin":3,"xZoomedDataMax":2958,"sizeOption":"_UNISIZE","iconKeySettings":[],"duration":{"multiplier":1,"timeUnit":"Y"},"yZoomedDataMax":4,"iconType":"BUBBLE","xAxisOption":"2","xLambda":1,"yAxisOption":"3","yLambda":1,"dimensions":{"iconDimensions":["dim0"]},"showTrails":true}\n'
-chart7 <- gvisMotionChart(deptSummaries2,idvar="DepartmentLong",
+chart8 <- gvisMotionChart(deptSummaries2,idvar="DepartmentLong",
                           timevar="Year",xvar="enrollment",yvar="grade",date.format="%Y",colorvar="Division",
                           options=list(state=myStateSettings8,height=600,width=550))
 plot(chart8)
