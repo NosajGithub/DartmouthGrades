@@ -112,6 +112,7 @@ final$Course <- as.numeric(final$Course)
 final$Section <- as.numeric(final$Section)
 final$Department[final$Department == "WST" ] <- "WGST"          ## Convert "WST" to "WGST" (Code used in the early years)
 final$Department <- gsub(" ","",final$Department)
+final$Department[final$Department == "ENGL" & final$Course %in% c(2,3,5)] <- "WRIT" ##Count English 2, 3, and 5 as Writing courses
 
 ############################
 ##    Rename Departments  ##
