@@ -194,7 +194,8 @@ final$DepartmentLong <- as.character(sapply(as.character(final$Department),switc
 ###################################
 ## Add in grade values
 final2 <-merge(final,gradeVals)
-# write.csv(final2,file="./final2.csv")
+# finalArranged <- arrange(final2, Year, Term, Department, Course, Section)
+# write.csv(finalArranged,file="./FinalGradeData.7.9.14.csv")
 
 ## Take mean of medians
 final2$mult <- with(final2,values*Enrollment)
